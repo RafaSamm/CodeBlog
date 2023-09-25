@@ -10,6 +10,9 @@ import java.util.List;
 public class PostServiceImpl implements PostService {
 
     private PostRepository postRepository;
+    public PostServiceImpl(PostRepository postRepository) {
+        this.postRepository = postRepository;
+    }
 
     @Override
     public List<Post> findAll() {
