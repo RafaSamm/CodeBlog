@@ -22,16 +22,16 @@ public class Data {
         List<Post> postList = new ArrayList<>();
 
         var post1 = new Post();
-        post1.setAutor("Rafael");
+        post1.setAutor("Rafael Sammarco");
         post1.setData(java.time.LocalDate.now());
-        post1.setTitulo("Docker");
-        post1.setTexto("Docker é uma ferramenta de desenvolvimento que facilita a criação de aplicativos distribuídos.");
+        post1.setTitulo("Desenvolvimento de Aplicativos");
+        post1.setTexto("Java é  uma linguagem de programação de alto nível");
 
         var post2 = new Post();
-        post2.setAutor("Rafael");
+        post2.setAutor("Mariana Katiuska");
         post2.setData(java.time.LocalDate.now());
-        post2.setTitulo("Java");
-        post2.setTexto("Java é uma linguagem de programação de alto nível.");
+        post2.setTitulo("Odontologia");
+        post2.setTexto("Odontologia é uma especialidade de dentista");
 
 
         postList.add(post1);
