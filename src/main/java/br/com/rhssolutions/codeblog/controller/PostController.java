@@ -29,12 +29,13 @@ public class PostController {
     }
 
     @RequestMapping(value = "/posts/{id}", method = RequestMethod.GET)
-    public ModelAndView getPostDetails(@PathVariable Long id) {
+    public ModelAndView getPostDetails(@PathVariable("id") long id) {
         ModelAndView mv = new ModelAndView("postDetails");
         Post post = postService.findById(id);
         mv.addObject("post", post);
         return mv;
     }
+
 
 
 }
