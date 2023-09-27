@@ -11,6 +11,7 @@ import java.util.List;
 @Component
 public class Data {
 
+    /*
     private PostRepository postRepository;
 
     public Data(PostRepository postRepository) {
@@ -43,5 +44,6 @@ public class Data {
         }
 
     }
+     */
 
 }

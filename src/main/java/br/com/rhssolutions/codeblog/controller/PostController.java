@@ -2,6 +2,9 @@ package br.com.rhssolutions.codeblog.controller;
 
 import br.com.rhssolutions.codeblog.model.Post;
 import br.com.rhssolutions.codeblog.service.PostService;
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,6 +12,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -23,6 +27,7 @@ public class PostController {
     public PostController(PostService postService) {
         this.postService = postService;
     }
+
 
     @RequestMapping(value = "/posts", method = RequestMethod.GET)
     public ModelAndView getPosts() {

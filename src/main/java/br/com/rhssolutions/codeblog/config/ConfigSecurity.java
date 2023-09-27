@@ -50,7 +50,8 @@ public class ConfigSecurity {
     private static final String[] AUTH_LIST = {
             "/",
             "/posts",
-            "/posts/{id}"
+            "/posts/{id}",
+            "/swagger-ui.html"
     };
 
     @Bean
